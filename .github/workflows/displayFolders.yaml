@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Récupérer le code source du projet
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
       - name: Lister les fichiers
         run: ls -la
