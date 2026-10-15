@@ -40,4 +40,4 @@ jobs:
 
 
       - name: Analyser avec CodeQL
-        uses: github/codeql-action/analyze@v5
+        uses: github/codeql-action/analyze@v7
