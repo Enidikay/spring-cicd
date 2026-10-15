@@ -11,4 +11,4 @@ jobs:
       - name: Récupérer le code source du projet
         uses: actions/checkout@v7
       - name: Lister les fichiers
-        run: ls -la
+        run: ls -l
