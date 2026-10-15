@@ -8,15 +8,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Utiliser la v21 de Java
-        uses: actions/setup-java@v5
+      - name: Récupérer le code source
+        uses: actions/checkout@v5
+
+      - name: Utiliser la version 21 de Java
+        uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: 'maven'
 
-      - name: Afficher la version Java
+      - name: Afficher la version de Java
         run: java -version
 
-      - name: Afficher la version Maven
+      - name: Afficher la version de Maven
         run: mvn -version
