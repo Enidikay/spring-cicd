@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
+<!DOCTYPE module PUBLIC
+        "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN"
         "https://checkstyle.org/dtds/configuration_1_3.dtd">
 
 <module name="Checker">
@@ -16,15 +17,13 @@
         <!-- Signale les comparaisons de littéraux String avec == ou != -->
         <module name="StringLiteralEquality"/>
 
-        <!-- Signale les instructions vides : if (condition); -->
+        <!-- Signale les instructions vides -->
         <module name="EmptyStatement"/>
 
         <!-- Signale les passages non explicités entre les case d'un switch -->
         <module name="FallThrough"/>
 
-        <!-- ============================================================= -->
-        <!-- JAVADOC                                                       -->
-        <!-- ============================================================= -->
+        <!-- JAVADOC -->
 
         <!-- Exige une Javadoc sur les types publics et protégés -->
         <module name="MissingJavadocType">
@@ -36,8 +35,7 @@
             <property name="scope" value="protected"/>
         </module>
 
-        <!-- Exige une Javadoc sur les méthodes publiques et protégées,
-             sauf celles portant les annotations indiquées -->
+        <!-- Exige une Javadoc sur les méthodes publiques et protégées -->
         <module name="MissingJavadocMethod">
             <property name="scope" value="protected"/>
             <property name="allowedAnnotations" value="Override, Test, Bean"/>
@@ -54,14 +52,12 @@
             <property name="scope" value="protected"/>
         </module>
 
-        <!-- Vérifie la forme de la Javadoc sans imposer de point final -->
+        <!-- Vérifie la Javadoc sans contrôler la première phrase -->
         <module name="JavadocStyle">
             <property name="checkFirstSentence" value="false"/>
         </module>
 
-        <!-- ============================================================= -->
-        <!-- IMPORTS                                                       -->
-        <!-- ============================================================= -->
+        <!-- IMPORTS -->
 
         <!-- Interdit les imports avec .* -->
         <module name="AvoidStarImport"/>
@@ -69,9 +65,7 @@
         <!-- Signale les imports inutilisés -->
         <module name="UnusedImports"/>
 
-        <!-- ============================================================= -->
-        <!-- NOMMAGE                                                       -->
-        <!-- ============================================================= -->
+        <!-- NOMMAGE -->
 
         <module name="PackageName"/>
         <module name="TypeName"/>
@@ -80,9 +74,7 @@
         <module name="ParameterName"/>
         <module name="StaticVariableName"/>
 
-        <!-- ============================================================= -->
-        <!-- STRUCTURE DU CODE                                             -->
-        <!-- ============================================================= -->
+        <!-- STRUCTURE DU CODE -->
 
         <!-- Signale les blocs vides -->
         <module name="EmptyBlock"/>
@@ -93,8 +85,7 @@
         <!-- Vérifie l'ordre des modificateurs -->
         <module name="ModifierOrder"/>
 
-        <!-- Signale les variables qui masquent un attribut,
-             sauf les paramètres des constructeurs et des setters -->
+        <!-- Signale les variables qui masquent un attribut -->
         <module name="HiddenField">
             <property name="ignoreConstructorParameter" value="true"/>
             <property name="ignoreSetter" value="true"/>
