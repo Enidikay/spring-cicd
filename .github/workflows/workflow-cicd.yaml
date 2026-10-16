@@ -36,7 +36,7 @@ jobs:
 
       - name: Générer le rapport Checkstyle
         if: ${{ always() }}
-        run: mvn -B checkstyle:checkstyle
+        run: mvn site
 
       - name: Sauvegarder le rapport JaCoCo
         if: ${{ success() || failure() }}
