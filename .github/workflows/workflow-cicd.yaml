@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: rapport-checkstyle
-          path: target/site/checkstyle.html
+          path: target/site/
           if-no-files-found: warn
 
       - name: Analyser avec CodeQL
